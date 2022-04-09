@@ -14,20 +14,13 @@ $('.emptyspan').empty()
 $(".icon4").on('click',function(){
 $(".answer-span").show()
 })
-
-
     function openIcon1() {
         document.querySelector(".icon1-open").style.display = "block";
         $('.allPageScale').addClass('disabled');
-        
-
       }
       function openIcon2() {
         document.querySelector(".icon2-open").style.display = "block";
         $('.allPageScale').addClass('disabled');
-        
-
-
       }
  
 var closeBtn1=document.querySelector('.imgIcon1'),
