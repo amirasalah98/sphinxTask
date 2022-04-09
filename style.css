@@ -1,0 +1,185 @@
+
+body{
+    overflow: hidden; 
+}
+.preloader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 8;
+    background-color: #ffffff;
+
+}
+.preloader div{
+    width: 100%;
+    height: 100%;
+    background:url(images/Preloader_2.gif) 50% 50% no-repeat ;
+}
+.allPageScale{
+    width: 100%;
+}
+
+.allPageScale:disabled{
+    background-color: #ffffff7e !important;
+}
+.bg-darkBlue{
+    position: relative;
+    background-color: #0fa0c5;
+    /* z-index: 5; */
+    height: 35vw;
+    width: 95%;
+    margin: auto;
+    right: 0%;
+    left: 0%;
+}
+.bg-lightBlue{
+    background-color: #deecf6;
+    height: auto;
+    padding: 3%;
+    width: 95%;
+    margin: auto;
+    right: 0%;
+    left: 0%;
+    bottom: 90%;
+    flex-wrap: nowrap;
+}
+
+.allContent,.icon1-open, .icon2-open{
+    width: 93%;
+    height: 38vw;
+    border: .4vw solid #f5821f;
+    border-radius: 1vw;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    right: 0%;
+    left: 0%;
+   top: 0%;
+   bottom: 0px;
+    
+}
+.allContent{
+    /* z-index: 4; */
+}
+.positionCloseIcon img{
+    cursor: pointer;
+}
+.guides{
+    width: 93%;
+    margin: auto;
+    margin-bottom: 2%;
+    
+}
+.guides p{
+    font-size: 2.5vw;
+   
+}
+.icon1,.icon2{
+cursor: pointer;
+width: 40%;
+padding: 5%;
+}
+.icon3{
+    width: 25%;
+    
+}
+.icon4{
+    width:28%;
+}
+.bg-lightBlue a{
+    
+}
+.icon1-open{
+    width: 100%;
+    height: 100%;
+    overflow:scroll;
+    background-image: url(images/dummy.jpg);
+    background-size: cover;
+}
+
+
+.icon1-open, .icon2-open{
+    display: none;
+    /* z-index: 3; */
+}
+.icon2-open{
+    font-size: 2vw;
+    padding: 1%;
+}
+
+.imgIcon1, .imgIcon2{
+    cursor: pointer;
+    width: 7%;
+    padding: 1%;
+}
+.imgIcon1{
+    padding: 2%;
+    width: 9%;
+}
+.answers button{
+    width: 4.5%;
+    padding: .4%;
+    margin: 4% 0% 4% 0%;
+    border: .16vw solid #0fa0c5;
+    border-radius: 1vw;
+    background-color: #ffffff;
+    font-size: 2vw;
+    font-weight:500;
+}
+.answers button:hover{
+    cursor: pointer;
+}
+.answers button:focus{
+    background-color: #0fa0c5;
+    color: #ffffff;
+    outline: none;
+    transition: .1s;
+}
+.content{
+    flex-wrap: nowrap;
+}
+.content p{
+    display: inline-block;
+    font-size: 2vw;
+    font-weight:500;
+    flex-wrap: nowrap;
+}
+.content img{
+    width: 40%;
+}
+
+.empty-span{
+    position: relative;
+    cursor: pointer;
+}
+.answer-span{
+    position: absolute;
+    display: none;
+    left: 40%;
+    right: 60%;
+}
+
+.empty-span.right::after{
+    content: url('icons/mark-right.png');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 95%;
+}
+.empty-span.wrong::after{
+    content: url('icons/crossMark-small.png');
+    position: absolute;
+    bottom: 95%;
+    width: 30px;
+    height: 30px;
+}
+/* .box {
+    width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    transition: all 1s ease-in-out;
+}
+.box:hover {
+    background-color: darkred;
+    transform: translateY(500px);
+} */

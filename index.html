@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=0.5, maximum-scale=3.0"  >
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="preloader">
+        <div></div>
+    </div>
+    <section class="allPageScale">
+        <div class="container ">
+            <!-- <div style="max-width: 1920px;min-width: 480px;"></div> -->
+            <div class="row guides col-xs-12 justify-content-between">
+                <p class="col-xs-6 titletest align-self-center">Complete the words.</p>
+                <div class="col-xs-6">
+                   <a href="#"> <img src="icons/icon1.png" class="icon1" alt="" onclick="openIcon1(event)"></a>
+                   <a href="#"> <img src="icons/icon2.png" class="icon2" alt="" onclick="openIcon2(event)"></a>
+                </div>
+            </div>
+           
+            <section class="all">
+                
+                <div class="bg-darkBlue">
+                    <section class=" allContent"> 
+                <div class=" row answers justify-content-center">
+                        <button value="a" class="answer1 answerBtn mr-2">a</button>
+                        <button value="p" class="answer2 answerBtn ml-2">p</button>
+                </div>
+                <div class="row content">
+                    <div class=" d-flex col-md-12 ">
+                     <div class="col-md-6">
+                        <p>1 t <span class="empty-span">____<span class="answer-span">a<span class="check-answer-span"></span></span></span> p</p>
+                        <img src="images/img1.png" alt="">
+                     </div>
+                     <div class="col-md-6 ">
+                        <p>2 <span class="empty-span">____<span class="answer-span">p<span></span></span></span> a t</p>
+                        <img src="images/img2.png" alt="">
+                     </div>
+                    </div>
+                </div>
+                <div class="row content col-md-12 justify-content-center">
+                    <div class="">   
+                        <p>3 m <span class="empty-span">____<span  class="answer-span" >a<span class="check-answer-span"></span></span></span> p</p>
+                        <img src="images/img3.png" alt="">   
+                    </div>
+                </div>
+                <div class="audio">
+                    <audio id="audio-correct" src="http://educationalrc.org/tasks/3/assets/audio/correct.mp3" ></audio>
+                    <audio id="audio-incorrect" src="https://educationalrc.org/tasks/3/assets/audio/incorrect.mp3"></audio>
+                </div>
+                
+            </section>
+            <section class="icon1-open" >
+                <div class=" d-flex justify-content-end">
+                    <img class="imgIcon1" src="icons/close_icon.png" alt=""  onclick="closeIcon1(event)">
+                </div>
+            </section>
+            <section class="icon2-open" >
+                <div class=" d-flex justify-content-between">
+                    <p>Help content goes here.</p>
+                    <img class="imgIcon2" src="icons/close_icon.png" alt="" onclick="closeIcon2(event)">
+                </div>
+            </section>
+                </div>
+                <div class="row col-xs-12 bg-lightBlue d-flex">
+                    <a href="" class="icon3 mr-5" ><img  src="icons/icon3.png" class="icon3" alt="" ></a>
+                    <a href="" class="icon4 ml-5" ><img  src="icons/icon4.png" class="icon4" alt=""></a>
+                </div>
+               
+
+                <!-- <div class="box">
+
+                </div> -->
+                
+            
+        
+            </section>
+            </div>
+            </section>
+        <!-- </div>
+    </section> -->
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="script1.js"></script>
+</body>
+</html>
