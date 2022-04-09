@@ -5,13 +5,15 @@ $('a').click(function (event) {
     event.preventDefault();
   });
 
+
+$(".icon3").on('click',function(){
+$(".answer-span").hide()
+$('.emptyspan').removeClass("right", "wrong")
+    })
+
 $(".icon4").on('click',function(){
 $(".answer-span").show()
 })
-$(".icon3").on('click',function(){
-    $(".answer-span").hide()
-    })
-
     function openIcon1() {
         document.querySelector(".icon1-open").style.display = "block";
         $('.allPageScale').attr("disabled", 'disabled');
@@ -22,7 +24,6 @@ $(".icon3").on('click',function(){
         $('.allPageScale').attr("disabled", 'disabled');
 
       }
- 
 var closeBtn1=document.querySelector('.imgIcon1'),
  closeBtn2=document.querySelector('.imgIcon2'),
 openicon1=document.querySelector(".icon1-open"),
@@ -56,22 +57,12 @@ function closeIcon2(event) {
         
     
         $(".empty-span").on('click',function(){
-            
-            question=$(this)
-            answerVal=($(this).children().text())
-
-
+            $(this).removeClass("selected")
                 if(selectedAnswer!==answerVal){
-                    // document.getElementById('audio-incorrect').play();
-                    // $(this).addClass('wrong')
-                    
-                    // $(this).html(selectedAnswer)
-                    // setTimeout(function(){
-                    //     // $(question).css("visibility", "hidden")
-                    // }, 1000)
-                // de feha moshklten 
-                //1- bt5ly mynf3sh a7ot ay value b3d ma a3mlha hidden
-                //2- msh btshel el selected class
+
+                    document.getElementById('audio-incorrect').play();
+                    $(this).addClass('wrong')
+
                 }else{
                     $(this).html(selectedAnswer)
                     document.getElementById('audio-correct').play();
